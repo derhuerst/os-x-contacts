@@ -1,0 +1,14 @@
+{
+	"name":        "os-x-contacts",
+	"description": "Query all macOS Address Book contacts",
+	"version":     "0.1.0",
+	"main":        "index.js",
+	"files":       ["index.js"],
+	"keywords":    ["macos", "os x", "address book", "contacts", "email", "phone"],
+	"author":      "Jannis R <mail@jannisr.de>",
+	"homepage":    "https://github.com/derhuerst/os-x-contacts",
+	"repository":  "derhuerst/os-x-contacts",
+	"bugs":        "https://github.com/derhuerst/os-x-contacts/issues",
+	"license":     "ISC",
+	"engines":     {"node": ">=6"}
+}
