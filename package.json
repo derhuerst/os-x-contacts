@@ -10,5 +10,12 @@
 	"repository":  "derhuerst/os-x-contacts",
 	"bugs":        "https://github.com/derhuerst/os-x-contacts/issues",
 	"license":     "ISC",
-	"engines":     {"node": ">=6"}
+	"engines":     {"node": ">=6"},
+	"devDependencies": {
+		"got": "^6.6.3"
+	},
+	"scripts": {
+		"download": "node download.js",
+		"prepublish": "npm run download"
+	}
 }
