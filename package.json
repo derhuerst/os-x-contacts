@@ -1,9 +1,10 @@
 {
 	"name":        "os-x-contacts",
-	"description": "Query all macOS Address Book contacts",
+	"description": "Query all macOS Address Book contacts.",
 	"version":     "0.1.0",
 	"main":        "index.js",
-	"files":       ["index.js"],
+	"files":       ["index.js", "contacts-cli"],
+	"bin":         {"contacts-cli": "./contacts-cli"},
 	"keywords":    ["macos", "os x", "address book", "contacts", "email", "phone"],
 	"author":      "Jannis R <mail@jannisr.de>",
 	"homepage":    "https://github.com/derhuerst/os-x-contacts",
@@ -20,7 +21,7 @@
 		"is-stream": "^1.1.0"
 	},
 	"scripts": {
-		"download": "node download.js",
+		"download": "node download.js contacts-cli && chmod 755 contacts-cli",
 		"prepublish": "npm run download",
 		"test": "node test/index.js"
 	}
