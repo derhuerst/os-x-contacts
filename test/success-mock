@@ -1,0 +1,6 @@
+#!/bin/sh
+
+sleep 1
+echo '{"firstName": "Jane", "lastName": "Doe"}'
+sleep 1
+echo '{"firstName": "John", "lastName": "Doe"}'

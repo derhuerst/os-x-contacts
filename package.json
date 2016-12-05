@@ -16,10 +16,12 @@
 		"stream-sink": "^2.0.0"
 	},
 	"devDependencies": {
-		"got": "^6.6.3"
+		"got": "^6.6.3",
+		"is-stream": "^1.1.0"
 	},
 	"scripts": {
 		"download": "node download.js",
-		"prepublish": "npm run download"
+		"prepublish": "npm run download",
+		"test": "node test/index.js"
 	}
 }
