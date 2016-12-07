@@ -1,7 +1,7 @@
 'use strict'
 
 const path = require('path')
-const process = require('child_process')
+const child = require('child_process')
 const ndjson = require('ndjson')
 const sink = require('stream-sink')
 
@@ -10,10 +10,13 @@ const sink = require('stream-sink')
 const executable = path.join(__dirname, 'contacts-cli')
 
 const contacts = (file = executable) => {
+	if (process.platform !== 'darwin')
+		throw new Error(`Unsupported platform ${process.platform}.`)
+
 	const stdout = ndjson()
 	const stderr = sink()
 
-	const p = process.spawn(file)
+	const p = child.spawn(file)
 	p.stderr.pipe(stderr)
 	p.stdout.pipe(stdout)
 

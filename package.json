@@ -1,7 +1,7 @@
 {
 	"name":        "os-x-contacts",
 	"description": "Query all macOS Address Book contacts.",
-	"version":     "0.1.0",
+	"version":     "0.1.1",
 	"main":        "index.js",
 	"files":       ["index.js", "contacts-cli"],
 	"bin":         {"contacts-cli": "./contacts-cli"},
@@ -22,7 +22,7 @@
 	},
 	"scripts": {
 		"download": "node download.js contacts-cli && chmod 755 contacts-cli",
-		"prepublish": "npm run download",
+		"prepublish": "npm run download && npm test",
 		"test": "node test/index.js"
 	}
 }
