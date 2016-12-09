@@ -4,7 +4,6 @@
 	"version":     "0.1.1",
 	"main":        "index.js",
 	"files":       ["index.js", "contacts-cli"],
-	"bin":         {"contacts-cli": "./contacts-cli"},
 	"keywords":    ["macos", "os x", "address book", "contacts", "email", "phone"],
 	"author":      "Jannis R <mail@jannisr.de>",
 	"homepage":    "https://github.com/derhuerst/os-x-contacts",
