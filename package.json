@@ -21,7 +21,8 @@
 	},
 	"scripts": {
 		"download": "node download.js contacts-cli && chmod 755 contacts-cli",
-		"prepublish": "npm run download && npm test",
-		"test": "node test/index.js"
+		"prepublish": "npm run download",
+		"test": "node test/index.js",
+		"test:non-os-x": "node test/non-os-x.js"
 	}
 }

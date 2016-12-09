@@ -1,9 +1,17 @@
 sudo: false
 language: node_js
+os:
+  - linux
+  - osx
 node_js:
   - 'stable'
   - '7'
   - '6'
 script:
   - npm run download
-  - npm test
+  - |
+    if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+      npm test
+    else
+      npm run test:non-os-x
+    fi
