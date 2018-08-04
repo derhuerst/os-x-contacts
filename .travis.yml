@@ -5,7 +5,7 @@ os:
   - osx
 node_js:
   - 'stable'
-  - '7'
+  - '8'
   - '6'
 script:
   - npm run download
