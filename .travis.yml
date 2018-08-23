@@ -6,7 +6,6 @@ os:
 node_js:
   - 'stable'
   - '8'
-  - '6'
 script:
   - npm run download
   - |
