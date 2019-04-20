@@ -29,7 +29,7 @@
 	},
 	"devDependencies": {
 		"got": "^9.0.0",
-		"is-stream": "^1.1.0"
+		"is-stream": "^2.0.0"
 	},
 	"scripts": {
 		"download": "node download.js contacts-cli && chmod 755 contacts-cli",
