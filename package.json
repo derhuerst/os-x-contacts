@@ -28,7 +28,7 @@
 		"stream-sink": "^2.0.0"
 	},
 	"devDependencies": {
-		"got": "^9.0.0",
+		"got": "^11.8.5",
 		"is-stream": "^1.1.0"
 	},
 	"scripts": {
