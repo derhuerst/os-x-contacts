@@ -21,11 +21,11 @@ npm install os-x-contacts
 Returns a [readable stream](https://nodejs.org/api/stream.html#stream_class_stream_readable) in [object mode](https://nodejs.org/api/stream.html#stream_object_mode).
 
 ```js
-const contacts = require('os-x-contacts')
+import {readContacts} from 'os-x-contacts'
 
-contacts()
-.on('data', console.log)
-.on('error', console.error)
+for await (contact of contacts()) {
+	console.log(contact)
+}
 ```
 
 ```js

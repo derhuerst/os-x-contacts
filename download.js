@@ -1,16 +1,16 @@
-'use strict'
+import {createRequire} from 'node:module'
+const require = createRequire(import.meta.url)
 
-const {ok} = require('assert')
-const {Writable} = require('node:stream')
-const {createWriteStream} = require('fs')
-const {join: pathJoin} = require('path')
+import {ok} from 'node:assert'
+import {Writable} from 'node:stream'
+import {createWriteStream} from 'node:fs'
 const pkg = require('./package.json')
 
 const USER_AGENT = `${pkg.name} v${pkg.version}`
 const RELEASE_URL = `\
 https://api.github.com/repos/pepebecker/contacts-cli/releases/4811892`
 
-const dest = pathJoin(__dirname, process.argv[2])
+const dest = (new URL(process.argv[2], import.meta.url)).pathname
 
 const headers = {
 	'User-Agent': USER_AGENT,
@@ -19,7 +19,7 @@ const headers = {
 	} : {}),
 }
 
-;(async () => {
+{
 	const res = await fetch(RELEASE_URL, {
 		redirect: 'follow',
 		headers: {
@@ -55,8 +55,4 @@ const headers = {
 	}
 
 	await assetRes.body.pipeTo(Writable.toWeb(createWriteStream(dest)))
-})()
-.catch((err) => {
-	console.error(err)
-	process.exit(1)
-})
+}

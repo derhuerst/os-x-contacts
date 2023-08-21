@@ -1,13 +1,8 @@
-'use strict'
+import child from 'node:child_process'
+import {parse as ndjson} from 'ndjson'
+import sink from 'stream-sink'
 
-const path = require('path')
-const child = require('child_process')
-const ndjson = require('ndjson')
-const sink = require('stream-sink')
-
-
-
-const executable = path.join(__dirname, 'contacts-cli')
+const executable = (new URL('contacts-cli', import.meta.url)).pathname
 
 const readContacts = (file = executable) => {
 	if (process.platform !== 'darwin')
@@ -26,4 +21,6 @@ const readContacts = (file = executable) => {
 	return stdout
 }
 
-module.exports = readContacts
+export {
+	readContacts,
+}

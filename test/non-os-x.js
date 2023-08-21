@@ -1,12 +1,10 @@
 #!/usr/bin/env node
-'use strict'
 
-const path = require('path')
-const assert = require('assert')
+import * as assert from 'node:assert'
 
-const contacts = require('..')
+import {readContacts as contacts} from '../index.js'
 
-const successMock = path.join(__dirname, 'success-mock')
+const successMock = (new URL('success-mock', import.meta.url)).pathname
 console.info('platform:', process.platform)
 
 assert.throws(() => contacts(successMock), {
