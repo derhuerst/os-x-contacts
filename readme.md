@@ -4,11 +4,10 @@
 
 [![npm version](https://img.shields.io/npm/v/os-x-contacts.svg)](https://www.npmjs.com/package/os-x-contacts)
 [![build status](https://img.shields.io/travis/derhuerst/os-x-contacts.svg)](https://travis-ci.org/derhuerst/os-x-contacts)
-[![dependency status](https://img.shields.io/david/derhuerst/os-x-contacts.svg)](https://david-dm.org/derhuerst/os-x-contacts)
-[![dev dependency status](https://img.shields.io/david/dev/derhuerst/os-x-contacts.svg)](https://david-dm.org/derhuerst/os-x-contacts#info=devDependencies)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/os-x-contacts.svg)
-[![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
-[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
+![minimum Node.js version](https://img.shields.io/node/v/os-x-contacts.svg)
+[![support me via GitHub Sponsors](https://img.shields.io/badge/support%20me-donate-fa7664.svg)](https://github.com/sponsors/derhuerst)
+[![chat with me on Twitter](https://img.shields.io/badge/chat%20with%20me-on%20Twitter-1da1f2.svg)](https://twitter.com/derhuerst)
 
 
 ## Installing
@@ -46,4 +45,4 @@ contacts()
 
 ## Contributing
 
-If you **have a question**, **found a bug** or want to **propose a feature**, have a look at [the issues page](https://github.com/derhuerst/os-x-contacts/issues).
+If you have a question or need support using `os-x-contacts`, please double-check your code and setup first. If you think you have found a bug or want to propose a feature, use [the issues page](https://github.com/derhuerst/os-x-contacts/issues).

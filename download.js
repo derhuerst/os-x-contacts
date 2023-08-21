@@ -20,6 +20,6 @@ got('https://api.github.com/repos/pepebecker/contacts-cli/releases/4811892', {js
 	.once('finish', () => yay())
 }))
 .catch((err) => {
-	console.error(err.message)
+	console.error(err)
 	process.exit(1)
 })

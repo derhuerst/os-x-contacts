@@ -32,9 +32,9 @@
 		"is-stream": "^1.1.0"
 	},
 	"scripts": {
-		"download": "node download.js contacts-cli && chmod 755 contacts-cli",
-		"prepublish": "npm run download",
+		"build": "node download.js contacts-cli && chmod +x contacts-cli",
 		"test": "node test/index.js",
-		"test:non-os-x": "node test/non-os-x.js"
+		"test:non-os-x": "node test/non-os-x.js",
+		"prepublish": "npm run build && npm test"
 	}
 }
