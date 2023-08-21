@@ -26,11 +26,11 @@
 		"node": ">=18"
 	},
 	"dependencies": {
-		"ndjson": "^1.5.0",
+		"ndjson": "^2.0.0",
 		"stream-sink": "^2.0.0"
 	},
 	"devDependencies": {
-		"is-stream": "^1.1.0"
+		"is-stream": "^3.0.0"
 	},
 	"scripts": {
 		"build": "node download.js contacts-cli && chmod +x contacts-cli",
