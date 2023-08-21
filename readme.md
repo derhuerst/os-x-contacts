@@ -3,7 +3,6 @@
 **Query all [macOS *Address Book*](https://support.apple.com/en-us/HT201728) contacts.** Uses [`contacts-cli`](https://github.com/pepebecker/contacts-cli) under the hood.
 
 [![npm version](https://img.shields.io/npm/v/os-x-contacts.svg)](https://www.npmjs.com/package/os-x-contacts)
-[![build status](https://img.shields.io/travis/derhuerst/os-x-contacts.svg)](https://travis-ci.org/derhuerst/os-x-contacts)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/os-x-contacts.svg)
 ![minimum Node.js version](https://img.shields.io/node/v/os-x-contacts.svg)
 [![support me via GitHub Sponsors](https://img.shields.io/badge/support%20me-donate-fa7664.svg)](https://github.com/sponsors/derhuerst)
