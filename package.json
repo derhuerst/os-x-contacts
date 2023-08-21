@@ -21,7 +21,7 @@
 	"bugs": "https://github.com/derhuerst/os-x-contacts/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=6"
+		"node": ">=18"
 	},
 	"dependencies": {
 		"ndjson": "^1.5.0",
@@ -34,6 +34,6 @@
 		"build": "node download.js contacts-cli && chmod +x contacts-cli",
 		"test": "node test/index.js",
 		"test:non-os-x": "node test/non-os-x.js",
-		"prepublish": "npm run build && npm test"
+		"prepublishOnly": "npm run build && npm test"
 	}
 }
