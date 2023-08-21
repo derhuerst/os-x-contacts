@@ -9,7 +9,7 @@ const sink = require('stream-sink')
 
 const executable = path.join(__dirname, 'contacts-cli')
 
-const contacts = (file = executable) => {
+const readContacts = (file = executable) => {
 	if (process.platform !== 'darwin')
 		throw new Error(`Unsupported platform ${process.platform}.`)
 
@@ -26,4 +26,4 @@ const contacts = (file = executable) => {
 	return stdout
 }
 
-module.exports = contacts
+module.exports = readContacts

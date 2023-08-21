@@ -30,14 +30,14 @@ contacts()
 
 ```js
 {
-  lastName: 'Appleseed', firstName: 'John',
-  phones: [ { label: 'mobile', value: '+49123456789' } ],
-  emails: [ { label: 'home', value: 'john.appleseed@example.org' } ]
+	lastName: 'Appleseed', firstName: 'John',
+	phones: [ { label: 'mobile', value: '+49123456789' } ],
+	emails: [ { label: 'home', value: 'john.appleseed@example.org' } ]
 }
 {
-  lastName: 'Appleseed', firstName: 'Jane',
-  phones: [ { label: 'mobile', value: '+49123456789' } ],
-  emails: [ { label: 'home', value: 'jane.appleseed@example.org' } ]
+	lastName: 'Appleseed', firstName: 'Jane',
+	phones: [ { label: 'mobile', value: '+49123456789' } ],
+	emails: [ { label: 'home', value: 'jane.appleseed@example.org' } ]
 }
 ```
 
